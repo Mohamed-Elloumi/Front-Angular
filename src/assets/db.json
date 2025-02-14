@@ -1,0 +1,25 @@
+{
+  "members": [
+    {
+      "id": "1",
+      "cin": "12354",
+      "name": "John",
+      "type": "Teacher",
+      "createdDate": "12/12/2014"
+    },
+    {
+      "id": "2",
+      "cin": "12354",
+      "name": "Doe",
+      "type": "Student",
+      "createdDate": "12/12/2015"
+    },
+    {
+      "id": "08b0",
+      "cin": "145469",
+      "name": "ahmed",
+      "type": "student",
+      "createdDate": "13/3/2019"
+    }
+  ]
+}
