@@ -12,12 +12,14 @@ import { MemberFormComponent } from './member-form/member-form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { ConfirmedDialogueComponent } from './confirmed-dialogue/confirmed-dialogue.component';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
    MemberComponent,
-   MemberFormComponent
+   MemberFormComponent,
+   ConfirmedDialogueComponent
   
 
   ],
@@ -31,7 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule,ReactiveFormsModule
+    FormsModule,ReactiveFormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
