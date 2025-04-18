@@ -5,14 +5,39 @@
       "cin": "12354",
       "name": "John",
       "type": "Teacher",
-      "createdDate": "12/12/2014"
+      "createdDate": "12/12/2014",
+      "tabEvent": [
+        {
+          "id": "1",
+          "title": "Event 1",
+          "dateDebut": "12/12/2014",
+          "dateFin": "12/12/2014",
+          "lieu": "Tunis"
+        }
+      ]
     },
     {
       "id": "2",
       "cin": "12354",
       "name": "Doe",
       "type": "Student",
-      "createdDate": "12/12/2015"
+      "createdDate": "12/12/2015",
+      "tabEvent": [
+        {
+          "id": "3",
+          "title": "Event 3",
+          "dateDebut": "12/12/2014",
+          "dateFin": "12/12/2014",
+          "lieu": "Tunis"
+        },
+        {
+          "id": "4",
+          "title": "Event 4",
+          "dateDebut": "12/12/2014",
+          "dateFin": "12/12/2014",
+          "lieu": "Tunis"
+        }
+      ]
     }
   ],
   "Evt": [
@@ -56,28 +81,28 @@
       "title": "Event 7",
       "dateDebut": "12/12/2014",
       "dateFin": "12/12/2014",
-      "lieu": "Tunis"
+      "lieu": "Gabes"
     },
     {
       "id": "8",
       "title": "Event 8",
       "dateDebut": "12/12/2014",
       "dateFin": "12/12/2014",
-      "lieu": "Tunis"
+      "lieu": "Mahdia"
     },
     {
       "id": "9",
       "title": "Event 9",
       "dateDebut": "12/12/2014",
       "dateFin": "12/12/2014",
-      "lieu": "Tunis"
+      "lieu": "Mahdia"
     },
     {
       "id": "10",
       "title": "Event 10",
       "dateDebut": "12/12/2014",
       "dateFin": "12/12/2014",
-      "lieu": "Tunis"
+      "lieu": "Sousse"
     },
     {
       "id": "11",
@@ -171,7 +196,7 @@
     },
     {
       "id": "5",
-      "type": "Article",
+      "type": "journal",
       "titre": "Publication 5",
       "lien": "http://www.google.com",
       "date": "12/12/2014",
@@ -227,8 +252,8 @@
     },
     {
       "id": "aec3",
-      "titre": "test",
-      "type": "journal",
+      "titre": "journal",
+      "type": "base",
       "sourcePdf": null,
       "lien": "test",
       "date": "2025-04-08T22:00:00.000Z"
