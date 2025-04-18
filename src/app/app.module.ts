@@ -12,6 +12,7 @@ import { MemberFormComponent } from './member-form/member-form.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
 
 import {MatDialogModule} from '@angular/material/dialog';
 import { TemplateComponent } from './template/template.component';
@@ -27,7 +28,13 @@ import { ArticleComponent } from './article/article.component';
 import { MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { ConfirmedDialogueComponent } from './confirmed-dialogue/confirmed-dialogue.component';
-
+import { ModalEventComponent } from './modal-event/modal-event.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import { PubDetailsComponent } from './pub-details/pub-details.component';
+import { PubModalComponent } from './pub-modal/pub-modal.component';
+import { MatSelectModule } from '@angular/material/select';
+import { NgChartsModule } from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +45,10 @@ import { ConfirmedDialogueComponent } from './confirmed-dialogue/confirmed-dialo
     DashboardComponent,
     ToolComponent,
     EventComponent,
-    ArticleComponent
+    ArticleComponent,
+    ModalEventComponent,
+    PubDetailsComponent,
+    PubModalComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +68,12 @@ import { ConfirmedDialogueComponent } from './confirmed-dialogue/confirmed-dialo
     MatMenuModule,
     MatSortModule,
     MatPaginatorModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatCardModule,
+    NgChartsModule,
+   
     
     
     

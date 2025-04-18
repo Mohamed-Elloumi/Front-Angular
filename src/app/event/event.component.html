@@ -1,3 +1,4 @@
+<button mat-raised-button color="primary" (click)="open()" style="width: 100px; height: 60px;">Create</button>
 <mat-form-field>
   <mat-label>Filter</mat-label>
   <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
@@ -21,18 +22,27 @@
     <!-- Name Column -->
     <ng-container matColumnDef="dateDebut">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Date Début </th>
-      <td mat-cell *matCellDef="let row"> {{row.dateDebut}} </td>
+      <td mat-cell *matCellDef="let row"> {{row.dateDebut|date}} </td>
     </ng-container>
 
     <!-- Fruit Column -->
     <ng-container matColumnDef="dateFin">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Date Fin </th>
-      <td mat-cell *matCellDef="let row"> {{row.dateFin}} </td>
+      <td mat-cell *matCellDef="let row"> {{row.dateFin|date}} </td>
     </ng-container>
+    <!-- le pipe date permet de formater la date pas le contenu de la date -->
 <!-- Fruit Column -->
 <ng-container matColumnDef="lieu">
   <th mat-header-cell *matHeaderCellDef mat-sort-header> lieu </th>
   <td mat-cell *matCellDef="let row"> {{row.lieu}} </td>
+</ng-container>
+<ng-container matColumnDef="action">
+  <th mat-header-cell *matHeaderCellDef mat-sort-header> Action</th>
+  <td mat-cell *matCellDef="let row"> 
+   
+<button (click)="openedit(row.id)"> <mat-icon  >edit</mat-icon></button>
+ <button (click)="deleteevent(row.id)"><mat-icon >delete</mat-icon></button> 
+</td>
 </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>

@@ -1,0 +1,48 @@
+<mat-dialog-content [formGroup]="form" style="width: 500px; height: 400px;">
+  
+    <mat-form-field style="width: 400%;">
+        <input matInput
+                placeholder="title"
+               formControlName="title">
+    </mat-form-field>
+    <br>
+    <!-- <mat-form-field style="width: 100%;">
+        <input matInput
+                placeholder="dateDebut"
+               formControlName="dateDebut">
+    </mat-form-field>
+    <br>
+    <mat-form-field style="width: 100%;">
+        <input matInput
+                placeholder="dateFin"
+               formControlName="dateFin">
+    </mat-form-field> -->
+    <mat-form-field>
+        <mat-label>Enter a date range</mat-label>
+        <mat-date-range-input [formGroup]="form" [rangePicker]="picker">
+          <input matStartDate formControlName="dateDebut" placeholder="Date début">
+          <input matEndDate formControlName="dateFin" placeholder="Date fin">
+        </mat-date-range-input>
+        <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      
+    
+      </mat-form-field>
+      
+      <p>Selected range: {{form.value | json}}</p>
+      
+    <br>
+    <mat-form-field style="width: 100%;">
+        <input matInput
+                placeholder="lieu"
+               formControlName="lieu">
+    </mat-form-field>
+  
+ 
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button"(click)="close()">Close</button>
+    <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+</mat-dialog-actions>
